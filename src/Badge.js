@@ -5,7 +5,7 @@ function Badge({ userData }) {
   return (
     <div className="badge">
       <div className="logo-area">
-        <img src="/path-to-your-logo.png" alt="Event Logo" className="event-logo" />
+        <img src="/images/badge_logo.png" alt="Event Logo" className="event-logo" />
       </div>
       <div className="badge-content">
         <h1 className="name">{userData.name}</h1>
