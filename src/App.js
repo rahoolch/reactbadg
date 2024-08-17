@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
 import UserForm from './UserForm';
+import Badge from './Badge';
 
 function App() {
   const [userData, setUserData] = useState(null);
 
   const handleSubmit = (formData) => {
     setUserData(formData);
-    // We'll use this data to create the badge in the next step
   };
 
   return (
@@ -20,7 +20,7 @@ function App() {
         {userData && (
           <div>
             <h2>Badge Preview</h2>
-            <pre>{JSON.stringify(userData, null, 2)}</pre>
+            <Badge userData={userData} />
           </div>
         )}
       </main>

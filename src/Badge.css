@@ -1,0 +1,50 @@
+.badge {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    background-color: white;
+  }
+  
+  .badge-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .badge-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .badge-body h3 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  .job-title, .company {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .badge-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .email {
+    font-size: 14px;
+    margin: 0;
+  }
