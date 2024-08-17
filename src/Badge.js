@@ -4,17 +4,16 @@ import './Badge.css';
 function Badge({ userData }) {
   return (
     <div className="badge">
-      <div className="badge-header">
-        <h2>EVENT NAME</h2>
+      <div className="logo-area">
+        <img src="/path-to-your-logo.png" alt="Event Logo" className="event-logo" />
       </div>
-      <div className="badge-body">
-        <img src="https://via.placeholder.com/150" alt="Profile" className="profile-image" />
-        <h3>{userData.name}</h3>
+      <div className="badge-content">
+        <h1 className="name">{userData.name}</h1>
         <p className="job-title">{userData.jobTitle}</p>
         <p className="company">{userData.company}</p>
       </div>
-      <div className="badge-footer">
-        <p className="email">{userData.email}</p>
+      <div className="attendee-status">
+        <p>ATTENDEE</p>
       </div>
     </div>
   );

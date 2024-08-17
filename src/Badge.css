@@ -1,50 +1,84 @@
 .badge {
-    width: 300px;
-    height: 450px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px auto;
+    width: 4in;
+    height: 6in;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0.0625in 0.125in rgba(0,0,0,0.1);
+    margin: 0.3125in auto;
+    page-break-after: always;
+  }
+  
+  .logo-area {
+    height: 1.5in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25in;
     background-color: white;
   }
   
-  .badge-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+  .event-logo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .badge-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25in;
+    background-color: white;
+  }
+  
+  .name {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
     text-align: center;
-  }
-  
-  .badge-body {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  
-  .badge-body h3 {
-    margin: 10px 0;
-    font-size: 24px;
+    color: black;
   }
   
   .job-title, .company {
+    font-size: 24px;
     margin: 5px 0;
-    font-size: 18px;
-  }
-  
-  .badge-footer {
-    background-color: #f1f1f1;
-    padding: 10px;
     text-align: center;
+    color: black;
   }
   
-  .email {
-    font-size: 14px;
+  .attendee-status {
+    background-color: #D32F2F;
+    color: white;
+    text-align: center;
+    padding: 0.25in;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .attendee-status p {
     margin: 0;
+  }
+
+  @page {
+    size: 4in 6in;
+    margin: 0;
+  }
+  
+  @media print {
+    html, body {
+      width: 4in;
+      height: 6in;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .badge {
+      margin: 0;
+      box-shadow: none;
+    }
   }

@@ -10,6 +10,10 @@ function App() {
     setUserData(formData);
   };
 
+  const handlePrint = () => {
+    window.print();
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +22,11 @@ function App() {
       <main>
         <UserForm onSubmit={handleSubmit} />
         {userData && (
-          <div>
+          <div className="badge-preview">
             <h2>Badge Preview</h2>
             <Badge userData={userData} />
+            <button onClick={handlePrint} className="print-button">Print Badge</button>
+            <p className="print-note">Note: For best results, ensure your browser and printer settings are set to print in color.</p>
           </div>
         )}
       </main>

@@ -48,3 +48,83 @@ button {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.badge-preview {
+  margin-top: 30px;
+}
+
+.badge-preview h2 {
+  text-align: center;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .print-note {
+    display: none;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+  .badge, .badge * {
+    visibility: visible;
+  }
+  .badge {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4in;
+    height: 6in;
+  }
+  .print-button, .print-note{
+    display: none;
+  }
+}
+
+.print-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.print-button:hover {
+  background-color: #45a049;
+}
+
+.print-note {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.print-instructions {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.print-instructions h3 {
+  margin-top: 0;
+}
+
+@media print {
+  .print-instructions {
+    display: none;
+  }
+}
