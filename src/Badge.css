@@ -9,7 +9,8 @@
     font-family: Arial, sans-serif;
     box-shadow: 0 0.0625in 0.125in rgba(0,0,0,0.1);
     margin: 0.3125in auto;
-    page-break-after: always;
+    /* page-break-after: avoid;
+    page-break-inside: avoid; */
   }
   
   .logo-area {
@@ -72,10 +73,12 @@
   
   @media print {
     html, body {
+      min-height: auto;
       width: 4in;
       height: 6in;
       margin: 0;
       padding: 0;
+      overflow: hidden;
     }
     
     .badge {
